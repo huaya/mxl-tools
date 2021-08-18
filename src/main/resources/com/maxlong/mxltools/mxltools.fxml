@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:controller="com.maxlong.mxltools.MxlToolsController" prefHeight="536.0" prefWidth="734.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab id="JsonFormat" text="Json Format">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="567.0" prefWidth="670.0">
+                    <children>
+                        <TextArea id="oriJson" fx:id="oriJsonArea" layoutX="39.0" layoutY="28.0" prefHeight="460.0"
+                                  prefWidth="253.0"/>
+                        <Button fx:id="formatButton" onAction="#formatButtonAction" layoutX="335.0" layoutY="239.0" mnemonicParsing="false"
+                                prefHeight="30.0" prefWidth="65.0" text="格式化"/>
+                        <TextArea id="aftJson" fx:id="aftJsonArea" layoutX="433.0" layoutY="28.0" prefHeight="463.0"
+                                  prefWidth="256.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Untitled Tab 2">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

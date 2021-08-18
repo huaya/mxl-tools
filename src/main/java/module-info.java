@@ -9,6 +9,7 @@ module com.maxlong.mxltools {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires org.apache.commons.lang3;
 
     opens com.maxlong.mxltools to javafx.fxml;
     exports com.maxlong.mxltools;
