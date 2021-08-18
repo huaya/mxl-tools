@@ -1,4 +1,5 @@
 module com.maxlong.mxltools {
+
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,6 +11,8 @@ module com.maxlong.mxltools {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires org.apache.commons.lang3;
+    requires fastjson;
+    requires java.sql;
 
     opens com.maxlong.mxltools to javafx.fxml;
     exports com.maxlong.mxltools;
