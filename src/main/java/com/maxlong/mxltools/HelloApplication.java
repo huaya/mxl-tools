@@ -1,4 +1,4 @@
-package com.maxlong.myfx1;
+package com.maxlong.mxltools;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

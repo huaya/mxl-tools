@@ -1,4 +1,4 @@
-module com.maxlong.myfx1 {
+module com.maxlong.mxltools {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,6 +10,6 @@ module com.maxlong.myfx1 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.maxlong.myfx1 to javafx.fxml;
-    exports com.maxlong.myfx1;
+    opens com.maxlong.mxltools to javafx.fxml;
+    exports com.maxlong.mxltools;
 }

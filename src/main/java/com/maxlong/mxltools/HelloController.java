@@ -1,4 +1,4 @@
-package com.maxlong.myfx1;
+package com.maxlong.mxltools;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
