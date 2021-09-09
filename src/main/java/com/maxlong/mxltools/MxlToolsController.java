@@ -2,6 +2,7 @@ package com.maxlong.mxltools;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.maxlong.mxltools.utils.DateFormat;
 import com.maxlong.mxltools.utils.DateUtil;
@@ -30,9 +31,9 @@ public class MxlToolsController {
         String pretty = "";
         if(StringUtils.isNotBlank(vaule)){
             try {
-                Object object = JSONObject.parse(vaule);
+                JSONObject object = JSONObject.parseObject(vaule, Feature.OrderedField);
                 pretty = JSON.toJSONString(object, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
-                        SerializerFeature.WriteDateUseDateFormat);
+                        SerializerFeature.WriteDateUseDateFormat, SerializerFeature.MapSortField);
             } catch (Exception e) {
                 System.err.println(e);
             }
